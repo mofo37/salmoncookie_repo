@@ -75,7 +75,7 @@ for (var i = 0; i < coffeeShops.length; i++) {
   storeNameHeader.textContent = shop.storeName;
 
   for (var hour = 0; hour < shop.storeHours.length; hour++) {
-    var cookiesPerThisHour = shop.storeHours[i] + ': ' + Math.floor(shop.calculateCookiesPerHour()) + ' cookies';
+    var cookiesPerThisHour = shop.storeHours[hour] + ': ' + Math.floor(shop.calculateCookiesPerHour()) + ' cookies';
     shop.cookiesPerHour.push(cookiesPerThisHour);
 
     var hourLi = document.createElement('li');
