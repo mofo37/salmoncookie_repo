@@ -69,7 +69,6 @@ var coffeeShops = [pike, seatac, seattle, capitol, alki];
 
 for (var i = 0; i < coffeeShops.length; i++) {
   var shop = coffeeShops[i];
-  console.log(shop.id);
 
   var storeList = document.getElementById(shop.id);
   var storeNameHeader = document.getElementById(shop.id + 'Header');
