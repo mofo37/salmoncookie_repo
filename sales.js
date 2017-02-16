@@ -112,8 +112,8 @@ function submitHandler(event) {
   event.preventDefault();
   var storeName = event.target.store_name.value;
   var minCustomers = parseInt(event.target.min_customers_per_hour.value);
-  var maxCustomers = event.target.max_customers_per_hour.value;
-  var aveCookies = event.target.ave_cookies_sold_per_hour.value;
+  var maxCustomers = parseInt(event.target.max_customers_per_hour.value);
+  var aveCookies = parseInt(event.target.ave_cookies_sold_per_hour.value);
   console.log(storeName, minCustomers, maxCustomers, aveCookies);
   var newStore = new Store(storeName, minCustomers, maxCustomers, aveCookies);
   coffeeShops.push(newStore);
