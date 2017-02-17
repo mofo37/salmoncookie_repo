@@ -20,9 +20,9 @@ Store.prototype.cookiesPerThisHour = function() {
   for (var hour = 0; hour < this.hours.length; hour++) {
     this.cookiesPerHour.push(Math.floor(this.calculateCookiesPerHour()));
   }
-  console.log(this.cookiesPerHour);
+  console.log("cookies per hour", this.cookiesPerHour);
 };
-
+ 
 
 Store.prototype.totalCookiesPerDay = function() {
   var total = 0;
@@ -119,6 +119,8 @@ function submitHandler(event) {
   coffeeShops.push(newStore);
   renderTable();
 };
+
+
 
 
 

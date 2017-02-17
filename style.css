@@ -28,7 +28,8 @@ footer {
 }
 
 img {
-  max-width: 50%;
+  width: 480px;
+  length: 360px;
   margin: 0 auto;
   display: block;
 }
@@ -51,16 +52,56 @@ li.first {
   max-width: 960px;
   margin: 0 auto;
 }
-
 a {
+  text-decoration: none;
   color: black;
+}
+a:hover {
+  color: salmon;
 }
 
 .fish {
   margin-top: 50px;
+  max-width: 50%;
 }
 
-.sales {
+.fish2 {
+  max-width: 20%;
+}
+
+.title {
   text-decoration: none;
 }
 
+.title:hover {
+  color: salmon;
+}
+
+.family {
+  max-width: 30%;
+}
+
+.shirt {
+  height: 150px;
+  width: auto;
+}
+
+.contact {
+  text-align: center;
+}
+
+.cutter {
+  margin-top: 10px;
+  height: 150px;
+  width: auto;
+}
+
+.fish3 {
+  height: 150px;
+  width: auto;
+}
+
+.cookie {
+  height: 150px;
+  width: auto;
+}
