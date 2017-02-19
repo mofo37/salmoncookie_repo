@@ -55,6 +55,8 @@ li.first {
 a {
   text-decoration: none;
   color: black;
+  transition: 300ms;
+  
 }
 a:hover {
   color: salmon;
