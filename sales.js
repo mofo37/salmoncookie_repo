@@ -110,6 +110,7 @@ function renderTable() {
   };
 
   addFooterRowToTable();
+  document.getElementById('new_store').reset();
 };
 
 var storeInput = document.getElementById('new_store');
