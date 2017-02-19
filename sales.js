@@ -36,8 +36,10 @@ Store.prototype.totalCookiesPerDay = function() {
 
 Store.prototype.render = function() {
   var hourTable = document.getElementById('coffeeshops');
+  var tbody = hourTable.getElementsByTagName('tbody')[0];
   var hourTr = document.createElement('tr');
-  hourTable.appendChild(hourTr);
+  tbody.appendChild(hourTr);
+  
 
   // populate hourly array so that we can calculate total
   this.cookiesPerThisHour();
@@ -60,8 +62,10 @@ Store.prototype.render = function() {
 function addHeadingsToTable () {
   var hours = ['', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm','6:00pm','7:00pm', '8:00pm', 'Total Cookies'];
   var hourTable = document.getElementById('coffeeshops');
+  var thead = document.createElement('thead');
+  hourTable.appendChild(thead);
   var hourTr = document.createElement('tr');
-  hourTable.appendChild(hourTr);
+  thead.appendChild(hourTr);
 
   for (var i = 0; i < hours.length; i++) {
     var hourTh = document.createElement('th');
@@ -72,8 +76,11 @@ function addHeadingsToTable () {
 
 function addFooterRowToTable () {
   var hourTable = document.getElementById('coffeeshops');
+  var tfoot = document.createElement('tfoot');
+  hourTable.appendChild(tfoot);
+  
   var hourTr = document.createElement('tr');
-  hourTable.appendChild(hourTr);
+  tfoot.appendChild(hourTr);
 
   var hourTd = document.createElement('td');
   hourTd.textContent = 'Totals';
@@ -95,8 +102,8 @@ function addFooterRowToTable () {
   }
 
   hourTd = document.createElement('td');
-    hourTd.textContent = totalTotal;
-    hourTr.appendChild(hourTd);
+  hourTd.textContent = totalTotal;
+  hourTr.appendChild(hourTd);
 
 };
 
@@ -104,6 +111,9 @@ function renderTable() {
   var oldTable = document.getElementById('coffeeshops');
   oldTable.textContent = '';
   addHeadingsToTable();
+
+  var tbody = document.createElement('tbody');
+  oldTable.appendChild(tbody);
 
   for (var i = 0; i < coffeeShops.length; i++) {
     coffeeShops[i].render();
