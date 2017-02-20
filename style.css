@@ -29,7 +29,6 @@ footer {
 
 img {
   width: 480px;
-  length: 360px;
   margin: 0 auto;
   display: block;
 }
@@ -109,8 +108,7 @@ a:hover {
 }
 
 #coffeeshops {
-  border: 1px solid black;
-  margin: 50px;
+  margin: 25px 50px;
   padding: 20px;
 }
 
@@ -126,11 +124,16 @@ tbody tr:nth-child(odd) {
   background-color: #efefef;
 }
 
+tfoot td {
+  font-weight: bold;
+  padding: 1em 0;
+}
+
 #new_store {
-  margin: 75px 150px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .submit {
   margin: 25px;
-  
 }
