@@ -107,3 +107,30 @@ a:hover {
   height: 150px;
   width: auto;
 }
+
+#coffeeshops {
+  border: 1px solid black;
+  margin: 50px;
+  padding: 20px;
+}
+
+thead th,
+tfoot td,
+tbody td {
+  text-align: right;
+  margin: 0;
+  padding: 0.4em;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+#new_store {
+  margin: 75px 150px;
+}
+
+.submit {
+  margin: 25px;
+  
+}
