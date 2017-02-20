@@ -51,14 +51,16 @@ li.first {
   max-width: 960px;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
   color: black;
-  transition: 300ms;
+  font-weight: bold;
   
 }
 a:hover {
   color: salmon;
+  transition: 300ms;
 }
 
 .fish {
