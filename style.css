@@ -29,7 +29,6 @@ footer {
 
 img {
   width: 480px;
-  length: 360px;
   margin: 0 auto;
   display: block;
 }
@@ -106,4 +105,35 @@ a:hover {
 .cookie {
   height: 150px;
   width: auto;
+}
+
+#coffeeshops {
+  margin: 25px 50px;
+  padding: 20px;
+}
+
+thead th,
+tfoot td,
+tbody td {
+  text-align: right;
+  margin: 0;
+  padding: 0.4em;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+tfoot td {
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+#new_store {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.submit {
+  margin: 25px;
 }
