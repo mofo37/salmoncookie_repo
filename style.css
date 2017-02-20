@@ -40,10 +40,10 @@ img {
 li {
   display: inline-block;
   padding: 1em;
-  border-left: 1px solid black;
+  border-left: 1px solid #aaa;
 }
 
-li.first {
+li:first-child {
   border-left: 0;
 }
 
@@ -136,6 +136,11 @@ tfoot td {
   margin-bottom: 30px;
 }
 
+#new_store input {
+  font-size: 1em;
+}
+
 .submit {
   margin: 25px;
 }
+
