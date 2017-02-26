@@ -39,7 +39,7 @@ Store.prototype.render = function() {
   var tbody = hourTable.getElementsByTagName('tbody')[0];
   var hourTr = document.createElement('tr');
   tbody.appendChild(hourTr);
-  
+
 
   // populate hourly array so that we can calculate total
   this.cookiesPerThisHour();
@@ -78,7 +78,7 @@ function addFooterRowToTable () {
   var hourTable = document.getElementById('coffeeshops');
   var tfoot = document.createElement('tfoot');
   hourTable.appendChild(tfoot);
-  
+
   var hourTr = document.createElement('tr');
   tfoot.appendChild(hourTr);
 
@@ -92,7 +92,7 @@ function addFooterRowToTable () {
     var hourlyTotal = 0;
     for (var j = 0; j < coffeeShops.length; j++) {
       hourlyTotal += coffeeShops[j].cookiesPerHour[i];
-    } 
+    }
 
     totalTotal += hourlyTotal;
 
